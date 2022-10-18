@@ -7,12 +7,18 @@
     */
 
     //ENTRADA
-
+    let qntAlunos = parseInt(prompt("Informe a quantidade de alunos"));
+    let listaMeninos = [];
+    let listaMeninas = [];
 
     //PROCESSAMENTO
-
-
+    for(let i = 1; i <= qntAlunos; i++){
+        let aluno = prompt("Informe o nome do aluno");
+        let genero = parseInt(prompt(`Informe o genero de ${aluno}(Menino-1|Menina-2)`));
+        if(genero === 1) listaMeninos.push(aluno);
+        else if(genero === 2) listaMeninas.push(aluno);
+    }
     //SAÍDA
-
+    document.write(`Meninos da turma: ${listaMeninos.sort().join(", ")} </br> Meninas da turma: ${listaMeninas.sort().join(", ")}`)
     
 </script>

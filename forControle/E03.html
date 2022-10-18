@@ -11,12 +11,15 @@
     */
 
     //ENTRADA
-
+    let investimentoInicial = Number(prompt("Informe o valor investido"));
+    let investimentoFinal = investimentoInicial
+    let meses = 0;
 
     //PROCESSAMENTO
-
-
+    for(meses = 1; investimentoFinal <= investimentoInicial * 2; meses++){
+        investimentoFinal = investimentoFinal * 1.05
+    }
     //SAÍDA
-
+    document.write(`Investimento Inicial: ${investimentoInicial} </br> Quantidade de meses necessário para duplicar o valor: ${meses}`)
 
 </script>

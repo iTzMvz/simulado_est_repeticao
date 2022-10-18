@@ -8,12 +8,15 @@
     */
 
     //ENTRADA
-
+    let precoKgArroz = [3.90, 4.80, 5.75, 6.99, 7.00, 4.99, 5.19];
+    let mediaPreco = 0
 
     //PROCESSAMENTO
-
-
+    for(let preco of precoKgArroz){
+        mediaPreco = mediaPreco + preco
+    }
+    mediaPreco = mediaPreco / precoKgArroz.length 
     //SAÍDA
-
+    document.write(`Média de preço do  quilo do arroz: ${mediaPreco.toFixed(2)} </br> Maior preço:${precoKgArroz.sort((a, b) => b - a) [0]} </br> Menor preço: ${precoKgArroz.sort()[0]} `)
 
 </script>

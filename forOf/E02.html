@@ -8,12 +8,13 @@
     */
 
     //ENTRADA
-
-
+    let nomePessoas = ["Eduardo da Silva", "Eduardo Montandon", "Lucas Eduardo", "José da Silva", "Rafael Gonçalves"];
+    let listaSilva = [];
     //PROCESSAMENTO
-
-
+    for(let nome of nomePessoas){
+        if(nome.search("Silva") > -1) listaSilva.push(nome)
+    }
     //SAÍDA
-
+    document.write(`Descendentes da familia Silva: ${listaSilva} </br> Quantidade de descendente: ${listaSilva.length}`)
 
 </script>

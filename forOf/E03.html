@@ -8,12 +8,17 @@
     */
 
     //ENTRADA
-
-
+    let listaLivros = ["A Arte da Guerra", "Sistemas Inteligentes", "Introdução a Programação com JS", "1984", "Use a cabeça: JS"];
+    let listaTecnico = [];
+    let listaFiccao = [];
     //PROCESSAMENTO
-
+    for(let livro of listaLivros){
+        let tipoLivro = prompt(`Informe se o livro "${livro}" é Ficção ou Técnico(Ficção-F|Técnico-T)`).trim().toLowerCase();
+        if(tipoLivro === "f") listaFiccao.push(livro)
+        else if(tipoLivro === "t")listaTecnico.push(livro)
+    }
 
     //SAÍDA
-
+    document.write(`Todos os livros: ${listaLivros} </br> Livros de romance: ${listaFiccao} </br> ${listaTecnico}`)
 
 </script>

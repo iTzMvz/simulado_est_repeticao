@@ -12,12 +12,17 @@
     */
 
     //ENTRADA
-
-
+    let qntdAbst = parseInt(prompt("Quantas vezes você abasteceu"));
+    let distancia = parseInt(prompt("Qual foi a disntância percorrida"));
+    let custoTotal = 0;
+    let custoAbst = 0;
     //PROCESSAMENTO
-
-
+    for(i = 1; i <= qntdAbst; i++){
+        custoAbst = Number(prompt("informe quanto custou cada abastecimento"));
+        custoTotal = custoTotal + custoAbst;
+    }
+    let precoKm = custoTotal / distancia;
     //SAÍDA
-
+    document.write(`Custo total dos abastecimentos: ${custoTotal} </br> Quilometragem Total: ${distancia} </br> Custo de cada quilômentro: ${precoKm}`)
 
 </script>
